@@ -165,7 +165,7 @@ const ShowExpense = () => {
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200">
-            {filteredExpenses.map((expense, index) => (
+            {filteredExpenses.reverse().map((expense, index) => (
               <tr key={index} className="hover:bg-gray-50 transition-colors">
                 <td className="px-6 py-4 text-sm text-gray-700">{index + 1}</td>
                 <td className="px-6 py-4 text-sm text-gray-700">{expense.name}</td>
