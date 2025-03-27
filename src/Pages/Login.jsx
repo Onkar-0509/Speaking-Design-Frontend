@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 import {useNavigate} from "react-router-dom"
-import { AppContext } from '../context/AppContext'
+import { AppContext } from '../Context/AppContext'
 
 const Login = () => {
   const [email, setEmail] = useState('')
